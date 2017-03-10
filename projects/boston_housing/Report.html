@@ -13266,8 +13266,9 @@ cGCtkiVJyz5/A3CPFgPAB2rmObpn/ikAuE+LAQAAAAAAAAAAAAAAAAAAAAAAAADgawNRaDYFIa/E
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <p>MAX-DEPTH = 1</p>
-<p>This is high bias scenario. As we can see, testing score increases as we keep on adding features and it is stable once it reaches 0.4 so model doesn generalize for new data.
-While training score keeps on decreasing till it reached 0.4, which looks like model doesnt fit data will.</p>
+<p>This is high bias scenario. As we can see, testing score increases as we keep on adding features and it is stable once it reaches 0.4 so model doesn generalize for new data.</p>
+<p>While training score keeps on decreasing till it reached 0.4, which looks like model doesnt fit data will.</p>
+<p>We can say this model is facing a high bias problem. So, having more training points would not benefit the model as the model is underfitting the dataset. Instead, one should increase the model complexity to better fit the dataset.</p>
 <p>Max-DEPTH = 10</p>
 <p>High Varaiance Scenario</p>
 <p>MAX-DEPTH = 6</p>
@@ -13744,7 +13745,7 @@ lFJKKaWUUkoppZTx/6IfBqgS7N6TAAAAAElFTkSuQmCC
     This indicates the model is fitting the dataset well but not generalizing well</p>
 <p>We can know whether the model is suffering from a high bias or a high variance by looking at the gap between training ad validation scores
 High variance models - Large gap.
-High bias models - small gap.</p>
+Model suffers from high bias when a minimal number of features are used.</p>
 
 </div>
 </div>
@@ -13765,7 +13766,7 @@ High bias models - small gap.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>I think Max-depth = 4, would generalize the best.Gap between the training score and testing score does not seem to be  substantial too, so model may not be suffering from a high variance scenario.</p>
+<p>I think Max-depth = 4, would generalize the best.Gap between the training score and testing score does not seem to be  substantial too, so model may not be suffering from a high variance scenario and also model isnt bias.</p>
 
 </div>
 </div>
@@ -13960,6 +13961,7 @@ For the <code>fit_model</code> function in the code cell below, you will need to
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> Parameter 'max_depth' is 4 for the optimal model.</p>
+<p>The max depth is the same as my guess in question 6.</p>
 
 </div>
 </div>
@@ -14158,6 +14160,7 @@ Trial 1: $391,183.33</p>
 <p>Data collected from 1978 may not be applicable as the demographics would change and other features may be better able to fit the dataset instead of a model with features that was learned using urban data.</p>
 <p>The learning algorithm learned from a very old dataset that may not be relevant because demographics have changed a lot since 1978.</p>
 <p>There are only 3 features currently, there are more features that can be included such as crime rates, nearby to city, public transport, grocery stores, restaurants and more.</p>
+<p>No we should not user constructed model as it is, we need to add more features.</p>
 
 </div>
 </div>
